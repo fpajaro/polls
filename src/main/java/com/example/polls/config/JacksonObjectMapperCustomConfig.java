@@ -11,7 +11,7 @@ public class JacksonObjectMapperCustomConfig{
 
 	@Bean
 	public Jackson2ObjectMapperBuilderCustomizer jacksonObjectMapperCustomization() {
-	    return jacksonObjectMapperBuilder -> 
+	    return jacksonObjectMapperBuilder ->
 	        jacksonObjectMapperBuilder.timeZone(TimeZone.getTimeZone("UTC"));
 	}
 }
